@@ -1,6 +1,5 @@
 package br.com.senai.controllers;
 
-import br.com.senai.models.Coffee;
 import br.com.senai.repositories.CoffeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
