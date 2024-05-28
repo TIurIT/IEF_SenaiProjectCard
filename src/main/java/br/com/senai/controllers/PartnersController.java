@@ -31,7 +31,7 @@ public class PartnersController {
         //Seta as propriedades do Coffee
         newPartner.setName(partner.getName());
         newPartner.setOccupation(partner.getOccupation());
-        newPartner.setCelphone(partner.getCelphone());
+        newPartner.setCellphone(partner.getCellphone());
         newPartner.setPrice_hr(partner.getPrice_hr());
         //Chama o método save para salvar o objeto no banco de dados
         return partnersRepository.save(newPartner);
@@ -47,7 +47,7 @@ public class PartnersController {
         updatePartners.setId(partner.getId());
         updatePartners.setName(partner.getName());
         updatePartners.setOccupation(partner.getOccupation());
-        updatePartners.setCelphone(partner.getCelphone());
+        updatePartners.setCellphone(partner.getCellphone());
         updatePartners.setPrice_hr(partner.getPrice_hr());
 
         return partnersRepository.save(updatePartners);

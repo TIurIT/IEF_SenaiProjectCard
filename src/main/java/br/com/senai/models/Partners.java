@@ -24,7 +24,7 @@ public class Partners implements Serializable {
     private String occupation;
 
     @Column(nullable = false)
-    private String celphone;
+    private String cellphone;
 
     @Column(nullable = false)
     private Double price_hr;
