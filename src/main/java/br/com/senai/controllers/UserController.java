@@ -7,9 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/usuarios")
 public class UserController {
     @Autowired
     UsersRepository usersRepository;
@@ -37,7 +37,7 @@ public class UserController {
     @PutMapping(value="/updateUsers",
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Users updateCoffee(@RequestBody Users users){
+    public Users updateUsers(@RequestBody Users users){
         Users getUser = usersRepository.findById(users.getId()).orElseThrow();
         Users updateUsers = new Users();
 
