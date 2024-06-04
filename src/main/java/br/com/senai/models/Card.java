@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -27,6 +28,9 @@ public class Card implements Serializable {
     
     @Column(nullable = false)
     private Double quantity;
+
+    @ManyToMany
+    private List<Users> user;
 
 
 }
